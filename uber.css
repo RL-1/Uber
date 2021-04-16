@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+html{
+    box-sizing:border-box; /*вставлять везде */
+
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+*{
+    color:#1D1D1D;
+}
+body{
+    left:0;
+    bottom: 0;
+    top:0;
+    right: 0;
+}
+.header{
+    display: block;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+    height: 72px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* header style start */
+.wrapper{
+    max-width: 1160px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+.header-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: 72px;
+}
+.header-logo{
+    justify-content: flex;
+}
+.header-list{
+    display:flex;
+    text-indent: 2em;
+    list-style-type: none; 
+}
+.header-join{
+    border: 1px solid #E0E0E0;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    transition: 1s;
+    
+}
+.header-join:hover{
+    border-radius: 15px;
+    background: greenyellow;
+}
+
+/* header style end */
+
+/* Search style start */ 
+
+.search{
+    margin: 128px auto 0;
+	height: 24px;
+}
+.search-form{
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+}
+.search-text{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.5;
+}
+/* Search style end */
+
+/* main style start */
+.main-title{
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+    margin-top: 56px;
+    margin-bottom: 16px;
+}
+.main-container-card{
+    left: 10px;
+}
+.main-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:16px;
+    justify-content: space-between;
+    grid-column-gap: 16px; /* отступы */
+    transition: 1s;
+}
+
+.benefits-card-thumb{
+    width: 100%;
+    min-width: 100px;
+    transition: 1s;
+
+}
+.main-card-img{
+    transition: 0.15s;
+    position:relative;
+    overflow:hidden;
+}
+.main-name{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+.main-pic{
+    display: block;
+    width: 600px;;
+	height: 256px; 
+}
+.main-price{
+    color:#626262;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 6px;
+}
+.main-time{
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1D1D1D;
+}
+
+.main-card-img:hover,.main-card-img:focus,.main-card-img:active{
+    transform: scale(1.02);
+}
+/* main style end */
+
+/* footer style start */ 
+.footer{
+    display: block;
+    position: absolute;
+    margin-top:190px;
+    background: #262626;
+    width: 100%;
+	left: 0;
+    top: 1468px;
+    height: 652px;
+}
+.footer-logo{
+    display: block;
+    margin-top: 56px;
+}
+.footer-img{
+    margin-top: 56px;
+}
+.footer-line{
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+}
+.footer-lang{
+    display: block;
+    position:relative;
+    padding-bottom:50px;
+    margin-top: 32px;
+    border-radius: 5px;
+}
+.footer-container-main{
+    display: flex;
+}
+.footer-info-block{
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 134px;
+    margin-top: 32px;
+    align-items: center;
+    margin-left: 97px;
+}
+.footer-info-block{
+    margin-top:23px;
+}
+.footer-site-text{
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+.footer-logos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-logo{
+    margin-top:17px;
+    margin-right: 12px;
+}
+.footer-plays{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-play{
+    margin-top: 41px;
+    margin-right: 40px;
+}
+.footer-card{
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.footer-last-card{
+    margin-top:40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* footer style end */
